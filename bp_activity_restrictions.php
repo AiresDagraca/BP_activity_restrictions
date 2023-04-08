@@ -52,4 +52,4 @@ function limit_activity_posts($user_id)
         bp_core_redirect(bp_get_activity_directory_permalink());
     }
 }
-add_action("bp
+add_action("bp_activity_before_save", "limit_activity_posts");
